@@ -1,22 +1,192 @@
 [
-  {"cedula": "3195367115", "asignadoNombre": "Manuel Santiago Jiménez Torres", "dulce": "Muchos dulces en especial chocolates, pero ricos, ideas para la gente, ponkys de nucita, Nutella o algo por el estilo, si no barras de proteína o unas dos cajas de confleis, (corn flakes)"},
-  {"cedula": "3185412891", "asignadoNombre": "Mercedes Beltrán", "dulce": "Crema de whisky mini"},
-  {"cedula": "3203073125", "asignadoNombre": "Nilson Javier Torres Anturi", "dulce": "Chocolates, dulces o licor"},
-  {"cedula": "3144497912", "asignadoNombre": "Laura Sofía Jiménez", "dulce": "Holi, me gustaría una rosa roja como la princesa de bella y la bestia ... Khee mentiris. Me gustaría por orden de preferencia doy opciones que se acomoden al presupuesto,#1 - me gustaría una caja 24 sobres de Quipitos  y un huevito kinder 🤭, #2 me gustaría una bolsa o caja llena de los dulces que se ajusten al presupuesto.me gustan los Quipitos, los productos kinder, los fundip si los consiguen, los nerds osea los oka loka, las mentas chao, las kit Kat, gomitas de fresitas o nanos o de tiburón, los masmelos cubiertos con chocolate, los deditos de chocolate, las morenitas, y las chupetas mexicanas."},
-  {"cedula": "3144675844", "asignadoNombre": "Dayana Astrid Fonseca Ramírez", "dulce": "Camisetas"},
-  {"cedula": "3192961527", "asignadoNombre": "Nicole Camila Torres Beltrán", "dulce": "Chocolates blancos, alfajor, cositas así (varios)"},
-  {"cedula": "3132673207", "asignadoNombre": "Maria Sair Torres Diaz", "dulce": "Splash victoria secret o snake tosh barras"},
-  {"cedula": "3058626264", "asignadoNombre": "Ricardo Andrés Torres Anturi", "dulce": "Perfume de senthia aroma Invictus, cuellero para la moto, o snacks picantes con bebida"},
-  {"cedula": "3142836673", "asignadoNombre": "Karol Jinneth Torres Fonseca", "dulce": "Un splash aromas dulce y chocolates burbuyet"},
-  {"cedula": "3219736607", "asignadoNombre": "Felipe Andrade ((novio de Sofi ))", "dulce": "Una Nutella con fresas."},
-  {"cedula": "3133681761", "asignadoNombre": "Javier Jiménez", "dulce": "Vino tinto"},
-  {"cedula": "3124273099", "asignadoNombre": "Santiago Galindo", "dulce": "Termómetro digital de cocina para alimentos y líquidos, y arequipe"},
-  {"cedula": "3113716240", "asignadoNombre": "Jimmy mayorga", "dulce": "Cerveza Coronita o Budweiser"},
-  {"cedula": "3208407985", "asignadoNombre": "Ma. Alejandra Barreto", "dulce": "Chocolates Biscolatta, barquillos Nuzart, Frambuesas bañadas en chocolate marca Avalange o Nucita"},
-  {"cedula": "3108765536", "asignadoNombre": "Mercedes Diaz", "dulce": "Voy a dar tres opciones de regalo pondré de primeras lo que más me gustaría recibir, un splash con unos aretes grandes que tengan topito grande porque los huequitos de mis orejas son grandes y se pueden salir, la segunda opción es un postre de maracuyá, con pote de yogurt griego marca dejamu., la tercera opción es un postre de tres leches, con pote de yogurt griego marca dejamu."},
-  {"cedula": "3059037133", "asignadoNombre": "Nilson Ricardo Torres Diaz", "dulce": "Perfume"},
-  {"cedula": "3197889500", "asignadoNombre": "John Torres", "dulce": "Chocolatina mont blanc baileys"},
-  {"cedula": "3143387305", "asignadoNombre": "Nora Patricia Torres", "dulce": "Opciones de regalo, un canguro o un implemento para gimnasio"}
+  {
+    "cedula": "1023365585",
+    "asignadoNombre": "DANIELA RINCON ARIAS",
+    "dulce": "Yogurt Griego, fruta o Gomitas"
+  },
+  {
+    "cedula": "1093594039",
+    "asignadoNombre": "VALENTINA MARTINEZ GOMEZ",
+    "dulce": "Rafaellos"
+  },
+  {
+    "cedula": "1018421489",
+    "asignadoNombre": "JHONATAN ESTEBAN CRUZ RODRIGUEZ",
+    "dulce": "Chocolates, gomitas o bonyures"
+  },
+  {
+    "cedula": "1015447209",
+    "asignadoNombre": "YULANNY SANCHEZ FORERO",
+    "dulce": "chomelos- chocorramos- gomas"
+  },
+  {
+    "cedula": "1069717961",
+    "asignadoNombre": "PAOLA ANDREA VARGAS HERNANDEZ",
+    "dulce": "Arequipe"
+  },
+  {
+    "cedula": "1024485585",
+    "asignadoNombre": "SANDRA MILENA CASTILLO CASTILLO",
+    "dulce": "Chocolate Blanco, brownie, Burbujas o Chocolates de Pistacho"
+  },
+  {
+    "cedula": "1024513206",
+    "asignadoNombre": "YESID RAMOS",
+    "dulce": "Cualquier dulce o cereal que sea ligth"
+  },
+  {
+    "cedula": "1023887972",
+    "asignadoNombre": "KARINA GONGORA GARCIA",
+    "dulce": "CHOCOLATES"
+  },
+  {
+    "cedula": "1075874278",
+    "asignadoNombre": "MARIA JACKELINE NIÑO",
+    "dulce": "Donas-chocolatina de pistacho"
+  },
+  {
+    "cedula": "80799261",
+    "asignadoNombre": "NELLY SARMIENTO",
+    "dulce": "TIRAMISÚ"
+  },
+  {
+    "cedula": "1072592116",
+    "asignadoNombre": "PATRICIA CASTRO",
+    "dulce": "M&M, GOMAS CUBIERTAS DE CHOCOLATE,UVAS CUBIERTAS DE CHOCOLATE"
+  },
+  {
+    "cedula": "1024502910",
+    "asignadoNombre": "JESSICA MARCELA SILVA CASTRO",
+    "dulce": "postre de tres leches"
+  },
+  {
+    "cedula": "1024473032",
+    "asignadoNombre": "LUIS FDERNEY BECERRA CASTILLO",
+    "dulce": "Brownie con helado o con leche - Chocolatina Jet con pistachos"
+  },
+  {
+    "cedula": "1073609880",
+    "asignadoNombre": "VIVIAN CAROLINA MAYORGA",
+    "dulce": "Gomitas ácidas, Beso de negra (ahora beso de amor) postre Tiramisú y/o un postre Red Velvet."
+  },
+  {
+    "cedula": "53141140",
+    "asignadoNombre": "LEIDY ROCIO PUENTE BAQUERO",
+    "dulce": "mani limon y pimienta y mix yogur marca la especial"
+  },
+  {
+    "cedula": "1121951320",
+    "asignadoNombre": "KATHERINE BUITRAGO",
+    "dulce": "Chocolatinas Blancas - chomelos - chocorramo - gala - burbujas Jet"
+  },
+  {
+    "cedula": "1018457846",
+    "asignadoNombre": "ANA MILENA SÁNCHEZ",
+    "dulce": "Donas de chocolate con maní o chispas de colores (Dunkin Donuts)"
+  },
+  {
+    "cedula": "1030571471",
+    "asignadoNombre": "JHON FREDDY CAMPAZ PAREDES",
+    "dulce": "Arequipe o gomitas"
+  },
+  {
+    "cedula": "53064050",
+    "asignadoNombre": "INGRID KATHERIN MARTINEZ SALAZAR",
+    "dulce": "Gomitas acidas, chocolate con maní, bonbonbum ROJO"
+  },
+  {
+    "cedula": "1020717238",
+    "asignadoNombre": "CAROLINA GUERRERO SUAREZ",
+    "dulce": "Fruta, frutos secos o postre tres leches."
+  },
+  {
+    "cedula": "52738959",
+    "asignadoNombre": "KARINA ANDREA MONCADA ORJUELA",
+    "dulce": "Donas o (opcion dulce clásica) es decir varios dulces que quieras darme"
+  },
+  {
+    "cedula": "1075875776",
+    "asignadoNombre": "CRIS ELIZABETH VALBUENA CASTRO",
+    "dulce": "Frambuesas con Chocolate negro marca Besties 150 Gr (lo venden en el D1)"
+  },
+  {
+    "cedula": "1014186939",
+    "asignadoNombre": "DANY MARCELA REYES",
+    "dulce": "Chocolate Blanco"
+  },
+  {
+    "cedula": "1023033884",
+    "asignadoNombre": "STEFANIA CRISTANCHO HURTADO",
+    "dulce": "Gomitas de todas las marcas."
+  },
+  {
+    "cedula": "1033816546",
+    "asignadoNombre": "LEIDY MILENA NEUTA MENDOZA",
+    "dulce": "Mix Arandanos, marca la especial"
+  },
+  {
+    "cedula": "1024477782",
+    "asignadoNombre": "YAZMIN ROCIO CIFUENTES MALDONADO",
+    "dulce": "GOMAS"
+  },
+  {
+    "cedula": "1053346720",
+    "asignadoNombre": "ANGGE BUSTOS GALVIS",
+    "dulce": "Chocolates donas helado de chocolate (No arequipe) jejeje"
+  },
+  {
+    "cedula": "1030636890",
+    "asignadoNombre": "JENNIFER GARCÍA ZAMORA",
+    "dulce": "Chocolates"
+  },
+  {
+    "cedula": "1070621100",
+    "asignadoNombre": "DIANA CAROLINA NEIRA CHAVARRO",
+    "dulce": "BARRAS DE CHOCORRAMO - GANSITOS"
+  },
+  {
+    "cedula": "1072714476",
+    "asignadoNombre": "MARIA NATALI CRUZ ORDOÑEZ",
+    "dulce": "Pizza"
+  },
+  {
+    "cedula": "1024510626",
+    "asignadoNombre": "NICOL ESTEFANY GONZALEZ PIÑEREZ",
+    "dulce": "chocolate negro"
+  },
+  {
+    "cedula": "1030531967",
+    "asignadoNombre": "KAREN BRILLIT ZAMORA BELLO",
+    "dulce": "DONAS, MANI LA ESPECIAL ARANDANOS, MILHOJAS."
+  },
+  {
+    "cedula": "1016077434",
+    "asignadoNombre": "SANTIAGO GALINDO",
+    "dulce": "Chocolates"
+  },
+  {
+    "cedula": "1013594688",
+    "asignadoNombre": "KATHERINE BARBOSA TRUJILLO",
+    "dulce": "Brownie o fruta"
+  },
+  {
+    "cedula": "52918629",
+    "asignadoNombre": "DEISY CATALINA CASTAÑEDA SAIZ",
+    "dulce": "Brownie"
+  },
+  {
+    "cedula": "1049372899",
+    "asignadoNombre": "KENNY NAVARRO ROJAS",
+    "dulce": "Chocolates."
+  },
+  {
+    "cedula": "52535923",
+    "asignadoNombre": "YUDI ESPERANZA AGUILAR DUARTE",
+    "dulce": "Chocolatinas"
+  },
+  {
+    "cedula": "1015412272",
+    "asignadoNombre": "YURY DANIELA GONZALEZ GORDO",
+    "dulce": "Brownies o Gomas acidas"
+  }
 ]
-
-
