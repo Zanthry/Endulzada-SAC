@@ -7,26 +7,26 @@
 <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Fondo con tonos rosados y cálidos */
-    background: linear-gradient(135deg, #fff0f3 30%, #ffc2d1 100%);
-    color: #222;
+    /* Fondo con tonos vainilla y crema cálido */
+    background: linear-gradient(135deg, #fcf8f5 30%, #eaddd7 100%);
+    color: #4a3525; /* Tono chocolate oscuro para el texto */
     max-width: 560px;
     margin: 40px auto;
     padding: 24px;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(201, 24, 74, 0.15);
-    /* Borde magenta/rosado oscuro */
-    border: 3px solid #ff4d6d;
+    box-shadow: 0 4px 20px rgba(164, 74, 63, 0.1);
+    /* Borde color terracota/caramelo */
+    border: 3px solid #d47a61;
   }
   h1 {
-    color: #c9184a;
+    color: #a44a3f; /* Rojo ladrillo/cacao */
     text-align: center;
     font-family: 'Pacifico', cursive, serif;
     margin-bottom: 8px;
     letter-spacing: 1px;
   }
-  .mensaje-amor {
-    color: #800f2f;
+  .mensaje-amistad {
+    color: #6b4c3a;
     text-align: center;
     margin-bottom: 28px;
     font-size: 1.10em;
@@ -36,26 +36,26 @@
     margin-top: 15px;
     display: block;
     font-weight: 600;
-    color: #a4133c;
+    color: #8e4938;
   }
   input[type="text"] {
     width: 100%;
     padding: 12px 15px;
     margin-top: 8px;
-    border: 2px solid #ff8fa3;
+    border: 2px solid #dcb5a7; /* Borde crema oscuro */
     border-radius: 8px;
     font-size: 16px;
     box-sizing: border-box;
     transition: border-color 0.2s ease;
-    background-color: #fafafa;
+    background-color: #ffffff;
   }
   input[type="text"]:focus {
-    border-color: #ff4d6d;
+    border-color: #d47a61;
     outline: none;
   }
   button {
     margin-top: 20px;
-    background-color: #ff4d6d;
+    background-color: #d47a61; /* Terracota */
     color: white;
     border: none;
     padding: 14px 20px;
@@ -65,10 +65,10 @@
     width: 100%;
     font-weight: 700;
     transition: background-color 0.3s ease;
-    box-shadow: 0 2px 6px rgba(255, 77, 109, 0.4);
+    box-shadow: 0 2px 6px rgba(212, 122, 97, 0.4);
   }
   button:hover:enabled {
-    background-color: #c9184a;
+    background-color: #ba654f; /* Terracota más oscuro al pasar el mouse */
   }
   button:disabled {
     background-color: #cccccc;
@@ -76,10 +76,10 @@
   }
   #resultado {
     margin-top: 25px;
-    background-color: #fffbfa;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid #ffb3c6;
+    border: 2px solid #ebd4cc;
     font-size: 18px;
     min-height: 70px;
     text-align: center;
@@ -88,10 +88,10 @@
     margin: 10px 0;
   }
   #mensaje-error {
-    color: #c9184a;
+    color: #a44a3f;
     font-weight: 600;
   }
-  .amor-emoji {
+  .amistad-emoji {
     font-size: 2.3em;
     display: block;
     text-align: center;
@@ -101,17 +101,17 @@
 <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="amor-emoji">💖🍬💌</div>
+  <div class="amistad-emoji">🎉🍫🎁</div>
   <h1>Amor y Amistad</h1>
-  <div class="mensaje-amor">
-    Ingresa tu número de celular y descubre a quién debes endulzar para celebrar con el equipo.
+  <div class="mensaje-amistad">
+    Ingresa tu número de celular y descubre a qué integrante del equipo debes endulzar.
   </div>
 
   <label for="cedulaInput">Ingresa tu número de celular</label>
   <input type="text" id="cedulaInput" placeholder="Ejemplo: 3102345678" autocomplete="off" disabled />
 
   <button type="button" id="buscarBtn" onclick="buscarAsignado()" disabled>Buscar</button>
-  <div id="resultado">Cargando datos de Amor y Amistad, por favor espera...</div>
+  <div id="resultado">Cargando datos del sorteo, por favor espera...</div>
 
 <script>
 let datos = [];
@@ -130,14 +130,13 @@ function buscarAsignado() {
     return;
   }
 
-  // Se mantiene "cedula" aquí para que tu JSON siga funcionando sin problemas
   const encontrado = datos.find(item => item.cedula === cedula);
   
   if (encontrado) {
     resultadoDiv.innerHTML = `
-      <p>Tu amigo secreto es: <strong style="color:#c9184a;">${encontrado.asignadoNombre}</strong></p>
-      <p>Debes llevarle: <strong style="color:#a4133c;">${encontrado.dulce}</strong></p>
-      <div style="text-align:center;font-size:2em;margin-top:14px;">💝🍫</div>
+      <p>Tu amigo secreto es: <strong style="color:#a44a3f;">${encontrado.asignadoNombre}</strong></p>
+      <p>Debes llevarle: <strong style="color:#d47a61;">${encontrado.dulce}</strong></p>
+      <div style="text-align:center;font-size:2em;margin-top:14px;">☕🍪</div>
     `;
   } else {
     resultadoDiv.innerHTML = '<p id="mensaje-error">Número no encontrado. Por favor verifica e intenta de nuevo.</p>';
@@ -152,7 +151,7 @@ fetch('datos.json')
   })
   .then(jsonData => {
     datos = jsonData;
-    document.getElementById('resultado').innerHTML = '¡Datos cargados! Ya puedes buscar tu endulzada.';
+    document.getElementById('resultado').innerHTML = '¡Datos cargados! Ya puedes buscar a tu amigo secreto.';
     activarBusqueda(true);
   })
   .catch(error => {
