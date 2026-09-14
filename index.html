@@ -104,11 +104,11 @@
   <div class="amistad-emoji">🎉🍫🎁</div>
   <h1>Amor y Amistad</h1>
   <div class="mensaje-amistad">
-    Ingresa tu número de celular y descubre a qué integrante del equipo debes endulzar.
+    Ingresa tu cédula y descubre a quién debes endulzar, para celebrar en equipo.
   </div>
 
-  <label for="cedulaInput">Ingresa tu número de celular</label>
-  <input type="text" id="cedulaInput" placeholder="Ejemplo: 3102345678" autocomplete="off" disabled />
+  <label for="cedulaInput">Ingresa tu Cédula</label>
+  <input type="text" id="cedulaInput" placeholder="Ejemplo: 1010205368" autocomplete="off" disabled />
 
   <button type="button" id="buscarBtn" onclick="buscarAsignado()" disabled>Buscar</button>
   <div id="resultado">Cargando datos del sorteo, por favor espera...</div>
@@ -126,7 +126,7 @@ function buscarAsignado() {
   const resultadoDiv = document.getElementById('resultado');
   
   if (!cedula) {
-    resultadoDiv.innerHTML = '<p id="mensaje-error">Por favor, ingresa tu número de celular.</p>';
+    resultadoDiv.innerHTML = '<p id="mensaje-error">Por favor, ingresa tu cédula.</p>';
     return;
   }
 
@@ -134,12 +134,12 @@ function buscarAsignado() {
   
   if (encontrado) {
     resultadoDiv.innerHTML = `
-      <p>Tu amigo secreto es: <strong style="color:#a44a3f;">${encontrado.asignadoNombre}</strong></p>
-      <p>Debes llevarle: <strong style="color:#d47a61;">${encontrado.dulce}</strong></p>
+      <p>Tu asignado es: <strong style="color:#a44a3f;">${encontrado.asignadoNombre}</strong></p>
+      <p>Dulce que debes llevar: <strong style="color:#d47a61;">${encontrado.dulce}</strong></p>
       <div style="text-align:center;font-size:2em;margin-top:14px;">☕🍪</div>
     `;
   } else {
-    resultadoDiv.innerHTML = '<p id="mensaje-error">Número no encontrado. Por favor verifica e intenta de nuevo.</p>';
+    resultadoDiv.innerHTML = '<p id="mensaje-error">Cédula no encontrada. Por favor verifica e intenta de nuevo.</p>';
   }
 }
 
@@ -151,7 +151,7 @@ fetch('datos.json')
   })
   .then(jsonData => {
     datos = jsonData;
-    document.getElementById('resultado').innerHTML = '¡Datos cargados! Ya puedes buscar a tu amigo secreto.';
+    document.getElementById('resultado').innerHTML = '¡Datos cargados! Ya puedes buscar tu endulzada.';
     activarBusqueda(true);
   })
   .catch(error => {
