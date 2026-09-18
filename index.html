@@ -106,53 +106,13 @@
   </div>
 
   <label for="cedulaInput">Ingresa tu Cédula</label>
-  <input type="text" id="cedulaInput" placeholder="Ejemplo: 1023365585" autocomplete="off" disabled />
+  <input type="text" id="cedulaInput" placeholder="Ejemplo: 52535923" autocomplete="off" disabled />
 
   <button type="button" id="buscarBtn" onclick="buscarAsignado()" disabled>Buscar</button>
   <div id="resultado">Cargando datos del sorteo...</div>
 
 <script>
-// Aquí están todos los datos integrados para que no falle la lectura del archivo
-const datos = [
-  {"cedula": "1023365585", "asignadoNombre": "DANIELA RINCON ARIAS", "dulce": "Yogurt Griego, fruta o Gomitas"},
-  {"cedula": "1093594039", "asignadoNombre": "VALENTINA MARTINEZ GOMEZ", "dulce": "Rafaellos"},
-  {"cedula": "1018421489", "asignadoNombre": "JHONATAN ESTEBAN CRUZ RODRIGUEZ", "dulce": "Chocolates, gomitas o bonyures"},
-  {"cedula": "1015447209", "asignadoNombre": "YULANNY SANCHEZ FORERO", "dulce": "chomelos- chocorramos- gomas"},
-  {"cedula": "1069717961", "asignadoNombre": "PAOLA ANDREA VARGAS HERNANDEZ", "dulce": "Arequipe"},
-  {"cedula": "1024485585", "asignadoNombre": "SANDRA MILENA CASTILLO CASTILLO", "dulce": "Chocolate Blanco, brownie, Burbujas o Chocolates de Pistacho"},
-  {"cedula": "1024513206", "asignadoNombre": "YESID RAMOS", "dulce": "Cualquier dulce o cereal que sea ligth"},
-  {"cedula": "1023887972", "asignadoNombre": "KARINA GONGORA GARCIA", "dulce": "CHOCOLATES"},
-  {"cedula": "1075874278", "asignadoNombre": "MARIA JACKELINE NIÑO", "dulce": "Donas-chocolatina de pistacho"},
-  {"cedula": "80799261", "asignadoNombre": "NELLY SARMIENTO", "dulce": "TIRAMISÚ"},
-  {"cedula": "1072592116", "asignadoNombre": "PATRICIA CASTRO", "dulce": "M&M, GOMAS CUBIERTAS DE CHOCOLATE,UVAS CUBIERTAS DE CHOCOLATE"},
-  {"cedula": "1024502910", "asignadoNombre": "JESSICA MARCELA SILVA CASTRO", "dulce": "postre de tres leches"},
-  {"cedula": "1024473032", "asignadoNombre": "LUIS FDERNEY BECERRA CASTILLO", "dulce": "Brownie con helado o con leche - Chocolatina Jet con pistachos"},
-  {"cedula": "1073609880", "asignadoNombre": "VIVIAN CAROLINA MAYORGA", "dulce": "Gomitas ácidas, Beso de negra (ahora beso de amor) postre Tiramisú y/o un postre Red Velvet."},
-  {"cedula": "53141140", "asignadoNombre": "LEIDY ROCIO PUENTE BAQUERO", "dulce": "mani limon y pimienta y mix yogur marca la especial"},
-  {"cedula": "1121951320", "asignadoNombre": "KATHERINE BUITRAGO", "dulce": "Chocolatinas Blancas - chomelos - chocorramo - gala - burbujas Jet"},
-  {"cedula": "1018457846", "asignadoNombre": "ANA MILENA SÁNCHEZ", "dulce": "Donas de chocolate con maní o chispas de colores (Dunkin Donuts)"},
-  {"cedula": "1030571471", "asignadoNombre": "JHON FREDDY CAMPAZ PAREDES", "dulce": "Arequipe o gomitas"},
-  {"cedula": "53064050", "asignadoNombre": "INGRID KATHERIN MARTINEZ SALAZAR", "dulce": "Gomitas acidas, chocolate con maní, bonbonbum ROJO"},
-  {"cedula": "1020717238", "asignadoNombre": "CAROLINA GUERRERO SUAREZ", "dulce": "Fruta, frutos secos o postre tres leches."},
-  {"cedula": "52738959", "asignadoNombre": "KARINA ANDREA MONCADA ORJUELA", "dulce": "Donas o (opcion dulce clásica) es decir varios dulces que quieras darme"},
-  {"cedula": "1075875776", "asignadoNombre": "CRIS ELIZABETH VALBUENA CASTRO", "dulce": "Frambuesas con Chocolate negro marca Besties 150 Gr (lo venden en el D1)"},
-  {"cedula": "1014186939", "asignadoNombre": "DANY MARCELA REYES", "dulce": "Chocolate Blanco"},
-  {"cedula": "1023033884", "asignadoNombre": "STEFANIA CRISTANCHO HURTADO", "dulce": "Gomitas de todas las marcas."},
-  {"cedula": "1033816546", "asignadoNombre": "LEIDY MILENA NEUTA MENDOZA", "dulce": "Mix Arandanos, marca la especial"},
-  {"cedula": "1024477782", "asignadoNombre": "YAZMIN ROCIO CIFUENTES MALDONADO", "dulce": "GOMAS"},
-  {"cedula": "1053346720", "asignadoNombre": "ANGGE BUSTOS GALVIS", "dulce": "Chocolates donas helado de chocolate (No arequipe) jejeje"},
-  {"cedula": "1030636890", "asignadoNombre": "JENNIFER GARCÍA ZAMORA", "dulce": "Chocolates"},
-  {"cedula": "1070621100", "asignadoNombre": "DIANA CAROLINA NEIRA CHAVARRO", "dulce": "BARRAS DE CHOCORRAMO - GANSITOS"},
-  {"cedula": "1072714476", "asignadoNombre": "MARIA NATALI CRUZ ORDOÑEZ", "dulce": "Pizza"},
-  {"cedula": "1024510626", "asignadoNombre": "NICOL ESTEFANY GONZALEZ PIÑEREZ", "dulce": "chocolate negro"},
-  {"cedula": "1030531967", "asignadoNombre": "KAREN BRILLIT ZAMORA BELLO", "dulce": "DONAS, MANI LA ESPECIAL ARANDANOS, MILHOJAS."},
-  {"cedula": "1016077434", "asignadoNombre": "SANTIAGO GALINDO", "dulce": "Chocolates"},
-  {"cedula": "1013594688", "asignadoNombre": "KATHERINE BARBOSA TRUJILLO", "dulce": "Brownie o fruta"},
-  {"cedula": "52918629", "asignadoNombre": "DEISY CATALINA CASTAÑEDA SAIZ", "dulce": "Brownie"},
-  {"cedula": "1049372899", "asignadoNombre": "KENNY NAVARRO ROJAS", "dulce": "Chocolates."},
-  {"cedula": "52535923", "asignadoNombre": "YUDI ESPERANZA AGUILAR DUARTE", "dulce": "Chocolatinas"},
-  {"cedula": "1015412272", "asignadoNombre": "YURY DANIELA GONZALEZ GORDO", "dulce": "Brownies o Gomas acidas"}
-];
+let datos = [];
 
 function activarBusqueda(activar) {
   document.getElementById('cedulaInput').disabled = !activar;
@@ -181,9 +141,20 @@ function buscarAsignado() {
   }
 }
 
-// Inicializamos la aplicación
-document.getElementById('resultado').innerHTML = '¡Datos cargados! Ya puedes buscar tu endulzada.';
-activarBusqueda(true);
+// Cargar el JSON externo
+fetch('datos.json')
+  .then(response => {
+    if (!response.ok) throw new Error('No se pudo cargar el archivo JSON.');
+    return response.json();
+  })
+  .then(jsonData => {
+    datos = jsonData;
+    document.getElementById('resultado').innerHTML = '¡Datos cargados! Ya puedes buscar tu endulzada.';
+    activarBusqueda(true);
+  })
+  .catch(error => {
+    document.getElementById('resultado').innerHTML = `<p id="mensaje-error">Error al cargar datos: Asegúrate de estar usando un servidor local (Live Server).</p>`;
+  });
 </script>
 </body>
 </html>
